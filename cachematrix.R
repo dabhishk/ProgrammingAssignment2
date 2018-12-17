@@ -10,9 +10,10 @@
     inv <<- NULL
   }
   get <- function() x
-  setinv <- function(inverse) inv <<- inverse
-  getinv <- function() inv
-  list(set = set, get = get, setinv = setinv, getinv = getinv
+  setinv <- function(inverse) 
+   inv <<- inverse
+  getinv <- function(inv)
+  list(set = set, get = get, setinv = setinv, getinv = getinv)
 }	
  ## Write a short comment describing this function	## cacheSolve is a function which computes the inverse of the special "matrix" 
 ## returned by makeCacheMatrix above. If the inverse has already been calculated 
